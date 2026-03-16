@@ -1,73 +1,28 @@
 # offer-matrix-android
 
+[中文](./README.zh-CN.md) | [English](./README.en.md)
+
 Android client for an AI mock interview and interview training platform.
 
-This app helps candidates prepare for real interviews with role-based practice, resume-aware mock interviews, generated question sets, favorites, and interview record analysis. It is designed for job seekers who want a mobile-first interview prep workflow instead of a static question bank.
+面向求职场景的 Android AI 模拟面试应用，支持岗位化练习、简历驱动提问、语音互动、题库训练与面试分析。
 
-## What It Does
+## Highlights
 
-- AI mock interview on Android with voice interaction
-- Resume-aware interview flow for more personalized questioning
-- Role-based preparation for jobs such as frontend, backend, AI, product, testing, and operations
-- Interview question training with generated question sets and favorites
-- Interview record saving and post-interview analysis
-- Materials and resume management tied to selected roles
+- AI mock interviews with voice interaction
+- Resume-aware and role-based interview practice
+- Interview training, favorites, and record analysis
 
-## Product Positioning
+## 亮点
 
-This repository is the mobile application layer of the Offer Matrix project. The product focuses on:
+- 支持语音交互的 AI 模拟面试
+- 支持岗位化与简历驱动的个性化练习
+- 支持题目训练、收藏与面试记录分析
 
-- AI interview practice
-- role-specific job preparation
-- resume-based personalized questioning
-- interview feedback and training loops
+## Read More
 
-## Tech Stack
-
-- Kotlin
-- Jetpack Compose
-- Android View + Compose hybrid screens
-- Retrofit
-- Media3
-- CameraX
-- ByteDance Speech Dialog SDK
-
-## Local Setup
-
-Do not commit speech SDK credentials or license files.
-
-Add these entries to your local `local.properties` file:
-
-```properties
-speechDialogAppId=your_app_id
-speechDialogAppKey=your_app_key
-speechDialogAccessToken=your_access_token
-```
-
-If your speech SDK also requires a local license asset, place the real file at:
-
-```text
-app/src/main/assets/tts_license
-```
-
-That file is gitignored and should stay local only.
-
-## Project Structure
-
-```text
-app/src/main/java/com/example/offermatrix/
-├── interview/      # Voice interview session and speech dialog logic
-├── network/        # Retrofit API models and client
-├── ui/navigation/  # App navigation
-├── ui/screens/     # Login, role, training, interview, analysis, profile pages
-├── ui/viewmodel/   # Presentation state
-└── utils/          # Shared helpers
-```
+- Chinese: [README.zh-CN.md](./README.zh-CN.md)
+- English: [README.en.md](./README.en.md)
 
 ## Related Repository
 
 - Backend API: [offer-matrix-api](https://github.com/wangyxs/offer-matrix-api)
-
-## Keywords
-
-AI interview, mock interview app, Android interview prep, resume-based interview, job training, Jetpack Compose, career prep
